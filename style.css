@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: #3f3f3fff;
+  padding: 10px;
+}
+
+.todo {
+  width:100%;
+  min-height: 100px;
+  max-width: 540px;
+  background: #fff;
+  margin: 100px auto 20px;
+  padding: 40px 30px, 70px;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.todo h2{
+  colour: #030303ff;
+}
