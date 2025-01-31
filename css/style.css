@@ -1,27 +1,110 @@
 * {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+  padding:0;
+  margin:0;
   box-sizing: border-box;
-}
-.container {
-  width: 100%;
-  min-height: 100vh;
-  background: #3f3f3fff;
-  padding: 10px;
+  font-family: "URW Gothic";
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-.todo {
+*::-web-kit-scrollbar {
+  display: none;
+}
+
+body{
+  background-color: #efefefff;
+}
+
+#board {
   width:100%;
-  min-height: 100px;
-  max-width: 540px;
-  background: #fff;
-  margin: 100px auto 20px;
-  padding: 40px 30px, 70px;
-  border-radius: 10px;
-  align-items: center;
+  height: 100%;
+  overflow: scroll;
+  /* background-color: #5f5f5fff; */
+  background-size: 100%;
 }
 
-.todo h2{
-  colour: #030303ff;
+/* ------------- FORM ----------- */
+#todo{
+  padding:32px 32px 0px;
+}
+
+#todo input{
+  padding: 12px;
+  margin-right:12px;
+  width:225px;
+
+  border-radius: 4px;
+  border:none;
+
+  box-shadow:0px 5px 15px rgba(0,0,0,0.25);
+  background:white;
+
+  font-size: 14px;
+  outline:none;
+}
+
+#todo_submit{
+  cursor:pointer;
+}
+
+/*-----------SWIM LANIES-_------------*/
+.lanes {
+  display:flex;
+  align-items: flex-start;
+  justify-content: start;
+  gap:16px;
+
+  padding:24px 32px;
+
+  overflow: scroll;
+  height: 100%;
+}
+
+.heading {
+  font-size:22px;
+  font-weight: bold;
+  margin-bottom:8px;
+}
+
+.swim-lane {
+  display: flex;
+  flex-direction: column;
+  gap:12px;
+
+  background:#f4f4f4ff;
+  box-shadow:0px 5px 15px rgba(0,0,0,0.25);
+
+  padding:12px;
+  border-radius: 4px;
+  width: 225px;
+  min-height: 120px;
+
+  flex-shrink: 0;
+}
+
+.task {
+  background: white;
+  color:black;
+  /* box-shadow: 0px 5px 15px rgba(0,0,0,0.15); */
+
+  padding:12px;
+  border-raduis:4px;
+
+  font-size:16px;
+  cursor:move;
+}
+
+.task:hover{
+  border:solid 2px rgba(50, 50, 50, 100%);
+  /* border-color: #rgba(50, 50, 50, 100%); */
+  /* background: rgba(50, 50, 50, 100%); */
+}
+
+.is-dragging {
+  scale:1.05;
+
+  box-shadow:0px 5px 15px rgba(0,0,0, 0.25);
+  background: rgba(50, 50, 50, 100%);
+  color: white;
 }
