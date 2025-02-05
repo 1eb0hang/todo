@@ -9,9 +9,25 @@ form.addEventListener("submit", addTask);
 
 function addTask(e){
   e.preventDefault();
-  const task = document.createElement("p");
+  const task = document.createElement("div");
+
+  const label = document.createElement("label");
+  label.setAttribute("for", "task_checkbox");
+
+  const checkbox = document.createElement("input");
+  checkbox.setAttribute("type", "checkbox");
+  checkbox.setAttribute("id","task_checkbox");
+  checkbox.setAttribute("name","task_checkbox");
+//   <div class="preference">
+//     <label for="cheese">Do you like cheese?</label>
+//     <input type="checkbox" name="cheese" id="cheese" />
+//   </div>
+
+  task.appendChild(checkbox);
+  task.appendChild(label);
+
   task.classList.add("task");
-  task.innerText = input.value;
+  label.innerText = input.value;
   input.value = "";
 
   taskList.appendChild(task);
