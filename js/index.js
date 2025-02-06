@@ -4,10 +4,11 @@ const input = document.getElementById("todo_input");
 const form = document.getElementById("todo");
 const submit = document.getElementById("todo_submit");
 
-submit.addEventListener("click", addTask);
+// submit.addEventListener("click", addTask);
 form.addEventListener("submit", addTask);
 
 function addTask(e){
+  console.log(this);
   e.preventDefault();
   const task = document.createElement("div");
 
@@ -18,10 +19,6 @@ function addTask(e){
   checkbox.setAttribute("type", "checkbox");
   checkbox.setAttribute("id","task_checkbox");
   checkbox.setAttribute("name","task_checkbox");
-//   <div class="preference">
-//     <label for="cheese">Do you like cheese?</label>
-//     <input type="checkbox" name="cheese" id="cheese" />
-//   </div>
 
   task.appendChild(checkbox);
   task.appendChild(label);
@@ -31,4 +28,8 @@ function addTask(e){
   input.value = "";
 
   taskList.appendChild(task);
+}
+
+function toggleTaskDone(){
+
 }
