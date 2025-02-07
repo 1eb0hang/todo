@@ -1,0 +1,22 @@
+package com.wren.model
+
+import org.hibernate.SessionFactory;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.BeforeEach;
+
+public class HibernateTest{
+
+  private SessionFactory SessionFactory;
+
+  @BeforeEach
+  protected void setUp() throws Exception{
+    final StandardServiceRegistory registory = new StandardServiceRegistoryBuilder()
+      .configure().build();
+  }
+
+  @Test
+  public void how_it_works(){
+    Task task = null;
+    assert task.getTitle().equals("Marco");
+  }
+}
