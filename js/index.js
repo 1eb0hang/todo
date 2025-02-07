@@ -1,3 +1,4 @@
+import {get, post} from "./network.js";
 
 const taskList = document.getElementById("tasks");
 const input = document.getElementById("todo_input");
