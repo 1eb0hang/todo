@@ -78,4 +78,4 @@ The document proceeds to detail the architectural style, system stakeholders
 - **tasklists** - Stores lists of tasks
 - **tasklistings** - Join table of "tasks" and "tasklists"
 
-![Database Diagrams]()
+![Database Diagrams](/docs/diagrams/ERD1.png)
