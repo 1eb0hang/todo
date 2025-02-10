@@ -76,3 +76,20 @@ I want to borrow a concept from **[Anytype]()** : Sets and Collections
 - has none of
 
 **Note** Properties can be stacked
+
+**Note** Should probably have some centralized place from which these are
+<br>defined
+
+## Class List
+
+### Front End
+- task - will be sent via post request
+  - title
+  - due
+  - schedule
+  - description
+
+
+- tasklist - also sent via post request
+  - title
+  - definition(condition)
