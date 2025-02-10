@@ -38,3 +38,22 @@
   <br>onto calendar
   - can be colour coordinated and filtered based on if they are
   <br>scheduled or due, on task lists, or on some other property
+
+
+### Non-Functinal Requirements
+
+<!-- - **Scalability:**
+   - Design the backend to handle an increasing number of users
+   <br>and data entries efficiently. -->
+
+
+- **Security:**
+   - Secure user data with proper encryption and secure
+   <br>communication protocols.
+   - Protect against common vulnerabilities like SQL injection
+   <br>and XSS.
+
+
+- **Maintainability:**
+   - Write clean, modular, and well-documented code to make
+   <br>future updates easier.
