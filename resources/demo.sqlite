@@ -1,7 +1,24 @@
 DROP TABLE IF EXISTS tasks;
 
 CREATE TABLE tasks (
-id INTEGER PRIMARY KEY NOT NULL,
-task TEXT NOT NULL UNIQUE,
-details TEXT
+	id INTEGER PRIMARY KEY NOT NULL,
+	task TEXT NOT NULL UNIQUE,
+	details TEXT
 );
+
+CREATE TABLE subtasks(
+	id,
+	task,
+	subtask
+)
+
+CREATE TABLE tasklists(
+	id INTEGER PRIMARY KEY NOT NULL,
+	title TEXT NOT NULL
+)
+
+CREATE TABLE listings(
+	id INTEGER PRIMARY KEY NOT NULL,
+	tasklist INTEGER,
+	task INTEGET
+)
